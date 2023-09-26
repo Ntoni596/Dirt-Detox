@@ -1,0 +1,105 @@
+/* Import Font From Google */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+#navigation {
+    background-color: transparent;
+    transition: 0.75s;
+}
+  
+#scrolled-navigation {
+    background-color: rgba(0,0,0,0.7);
+    transition: 0.75s;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    justify-self: flex-start;
+    padding: 1vh 2vw
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 0 2vw;
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+.nav-links a:hover{
+    font-size: 23px;
+    transition: 0.7s;
+}
+
+.hero-image{
+    filter: blur(5px)
+}
+
+.hero-image img{
+    width: 100vw;
+    opacity: 0.5;
+}
+.hero{
+    background: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0,0,0,0.7) ,rgba(255, 255, 255));
+}
+
+.heading{
+    font-size: 43px;
+    padding: 5vh 5vw;
+
+}
+
+.text-content::after{
+    content: "";
+    display: block;
+    width: 2px;
+    background-color: black;
+    border-left:2px solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5vw;
+}
+
+.text-content{
+    display: flex;
+    font-size: 18px;
+    padding: 0 10vw;
+    position: relative;
+    align-items: center;
+}
+
+.text-content img {
+    min-height: 100%; 
+    margin-left: 10px; 
+    order: 1; 
+}
+  .text-content p {
+    flex: 1; 
+    margin-right: 10px; 
+    order: 0; 
+  }
+
+.container{
+    margin-top: 5vh;
+}
+
+
+#services{
+    background-color:#202048 ;
+    color: white;
+}
