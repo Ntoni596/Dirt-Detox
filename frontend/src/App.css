@@ -86,7 +86,7 @@ nav{
 .text-content img {
     min-height: 100%; 
     margin-left: 10px; 
-    order: 1; 
+    order: 1;
 }
   .text-content p {
     flex: 1; 

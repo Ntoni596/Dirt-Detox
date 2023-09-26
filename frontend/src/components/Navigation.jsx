@@ -34,11 +34,19 @@ function Navigation() {
       });
     });
 
+    const logo = document.querySelector('.nav-logo img');
+    logo.addEventListener('click', () => {
+      smoothScroll('hero'); // Replace 'hero' with the ID of the top section of your page
+    });
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       links.forEach((link) => {
         link.removeEventListener('click', smoothScroll);
+      });
+      logo.removeEventListener('click', () => {
+        smoothScroll('hero'); // Remove the logo click event listener
       });
       window.removeEventListener('scroll', handleScroll);
     };
@@ -46,7 +54,7 @@ function Navigation() {
 
   return (
     <div>
-      <div className="hero">
+      <div id="hero" className="hero">
         <div className="hero-image">
           <img src={heroImage} alt="Hero Image" />
         </div>
