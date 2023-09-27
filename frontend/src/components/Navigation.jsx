@@ -58,9 +58,11 @@ function Navigation() {
         <div className="hero-image">
           <img src={heroImage} alt="Hero Image" />
         </div>
-        <div className="hero-text"></div>
+        <div className="hero-text">
+          <h1>Where cleanliness meets professionalism.<br></br>Let's make your workplace shine!</h1>
+          <a href="#contact"className='contact-button'>Get In Touch!</a>
+        </div>
       </div>
-
       <nav id={isScrolled ? 'scrolled-navigation' : 'navigation'}>
         <div className="nav-logo">
           <img src={navLogo} alt="Dirt Detox Logo" />
@@ -68,7 +70,7 @@ function Navigation() {
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a className="contact-button" href="#contact">Contact</a>
         </div>
       </nav>
     </div>

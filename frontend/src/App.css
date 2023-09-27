@@ -25,11 +25,15 @@ nav{
     align-items: center;
     width: 100vw;
     justify-content: space-between;
+    z-index: 99;
 }
 
 .nav-logo{
     justify-self: flex-start;
     padding: 1vh 2vw
+}
+.nav-links{
+    margin: 0 2vw;
 }
 
 .nav-links a{
@@ -40,9 +44,26 @@ nav{
     transition: 0.7s;
 }
 
+.nav-links .contact-button{
+    border: white solid 2px;
+    padding: 0.5vh 2vw;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
 .nav-links a:hover{
     font-size: 23px;
     transition: 0.7s;
+}
+
+.hero-text .contact-button{
+    border: solid 2px white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: black;
+    color: white;
+    text-decoration: none;
 }
 
 .hero-image{
@@ -51,16 +72,32 @@ nav{
 
 .hero-image img{
     width: 100vw;
+    height: auto;
     opacity: 0.5;
 }
 .hero{
     background: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0,0,0,0.7) ,rgba(255, 255, 255));
+    position: relative
 }
 
 .heading{
     font-size: 43px;
     padding: 5vh 5vw;
 
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    color: white;
+}
+
+.hero-text h1{
+    font-size: 66px;
+    font-weight: lighter;
+    padding-bottom: 2vh;
 }
 
 .text-content::after{
@@ -78,17 +115,37 @@ nav{
 .text-content{
     display: flex;
     font-size: 18px;
-    padding: 0 10vw;
+    padding: 0 0 0 10vw;
     position: relative;
     align-items: center;
 }
-
-.text-content img {
-    min-height: 100%; 
-    margin-left: 10px; 
-    order: 1;
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "image-one image-two"
+    "image-three image-four"
+    ;
 }
-  .text-content p {
+#image-one{
+    grid-area: image-one;
+}
+#image-two{
+    grid-area: image-two;
+}
+#image-three{
+    grid-area: image-three;
+}
+#image-four{
+    grid-area: image-four;
+}
+
+.grid-image{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.text-content p {
     flex: 1; 
     margin-right: 10px; 
     order: 0; 

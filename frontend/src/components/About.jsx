@@ -1,5 +1,8 @@
 import React from 'react';
 import aboutImage from '../assets/about.jpg'
+import placeholder from '../assets/placeholder.jpg'
+import placeholder2 from '../assets/placeholder.jpg'
+import placeholder3 from '../assets/placeholder.jpg'
 
 function About() {
   return (
@@ -9,7 +12,7 @@ function About() {
       </div>
       <div className='text-content'>
         <p>
-          Established in 2023, Dirt Detox is a proudly New Zealand-owned and operated cleaning company based in the beautiful city of Wellington. We have quickly become the go-to choice for commercial, home, and bathroom cleaning services, thanks to our unwavering commitment to excellence and our reputation for providing prompt and efficient cleaning solutions.
+          Established in 2022, Dirt Detox is a proudly New Zealand-owned and operated cleaning company. We have quickly become the go-to choice for commercial, home, and bathroom cleaning services, thanks to our unwavering commitment to excellence and our reputation for providing prompt and efficient cleaning solutions.
           <br></br>
           <br></br>
           At Dirt Detox, we are deeply rooted in the vibrant community of Wellington. Our local knowledge and strong ties to the region enable us to understand and cater to the unique cleaning needs of our fellow Wellingtonians. We're not just a cleaning company; we're your neighbors, and we take pride in contributing to the cleanliness and well-being of our community.
@@ -39,7 +42,20 @@ function About() {
 
           Your cleanliness is our business, and your satisfaction is our mission.
         </p>
-        <img src={aboutImage}></img>
+        <div className='image-container'>
+        <div id='image-one'>
+            <img className="grid-image" src={placeholder}></img>
+          </div>
+          <div id='image-two'>
+            <img className="grid-image" src={placeholder}></img>
+          </div>          
+          <div id='image-three'>
+            <img className="grid-image" src={placeholder}></img>
+          </div>          
+          <div id='image-four'>
+            <img className="grid-image" src={placeholder}></img>
+          </div>
+        </div>
       </div>
     </div>
   );
