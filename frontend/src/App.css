@@ -1,162 +1,274 @@
 /* Import Font From Google */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 #navigation {
-    background-color: transparent;
-    transition: 0.75s;
+  background-color: transparent;
+  transition: 0.75s;
 }
-  
+
 #scrolled-navigation {
-    background-color: rgba(0,0,0,0.7);
-    transition: 0.75s;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.75s;
 }
 
-nav{
-    position: fixed;
-    top: 0;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    justify-content: space-between;
-    z-index: 99;
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  z-index: 99;
 }
 
-.nav-logo{
-    justify-self: flex-start;
-    padding: 1vh 2vw
+.nav-logo {
+  justify-self: flex-start;
+  padding: 1vh 2vw;
 }
-.nav-links{
-    margin: 0 2vw;
-}
-
-.nav-links a{
-    color: white;
-    text-decoration: none;
-    padding: 0 2vw;
-    font-size: 20px;
-    transition: 0.7s;
+.nav-links {
+  margin: 0 2vw;
 }
 
-.nav-links .contact-button{
-    border: white solid 2px;
-    padding: 0.5vh 2vw;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0 2vw;
+  font-size: 20px;
+  transition: 0.7s;
 }
 
-.nav-links a:hover{
-    font-size: 23px;
-    transition: 0.7s;
+.nav-links .contact-button {
+  border: white solid 2px;
+  padding: 0.5vh 2vw;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
 }
 
-.hero-text .contact-button{
-    border: solid 2px white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: black;
-    color: white;
-    text-decoration: none;
+.nav-links a:hover {
+  font-size: 23px;
+  transition: 0.7s;
 }
 
-.hero-image{
-    filter: blur(5px)
+.hero-text .contact-button {
+  border: solid 2px white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: black;
+  color: white;
+  text-decoration: none;
 }
 
-.hero-image img{
-    width: 100vw;
-    height: auto;
-    opacity: 0.5;
-}
-.hero{
-    background: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0,0,0,0.7) ,rgba(255, 255, 255));
-    position: relative
+.hero-image {
+  filter: blur(5px);
 }
 
-.heading{
-    font-size: 43px;
-    padding: 5vh 5vw;
-
+.hero-image img {
+  width: 100vw;
+  height: auto;
+  opacity: 0.5;
+}
+.hero {
+  background: linear-gradient(
+    rgba(0, 0, 0),
+    rgba(0, 0, 0),
+    rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255)
+  );
+  position: relative;
 }
 
-.hero-text{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-20%, -50%);
-    color: white;
+.heading {
+  font-size: 43px;
+  padding: 5vh 5vw;
 }
 
-.hero-text h1{
-    font-size: 66px;
-    font-weight: lighter;
-    padding-bottom: 2vh;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  color: white;
 }
 
-.text-content::after{
-    content: "";
-    display: block;
-    width: 2px;
-    background-color: black;
-    border-left:2px solid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 5vw;
+.hero-text h1 {
+  font-size: 66px;
+  font-weight: lighter;
+  padding-bottom: 2vh;
+}
+.service {
+  background-color: rgba(255, 255, 255, 0.324);
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  margin: 1vh 0;
 }
 
-.text-content{
-    display: flex;
-    font-size: 18px;
-    padding: 0 0 0 10vw;
-    position: relative;
-    align-items: center;
+.service-heading {
+  grid-area: service-heading;
 }
-.image-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
+
+.service p {
+  padding: 3vh 2vw;
+  grid-area: service-text;
+  color: rgb(255, 255, 255);
+}
+
+.service p strong {
+  color: rgb(141, 221, 118);
+}
+
+.service img {
+  justify-self: center;
+}
+.service-chevron {
+  color: rgba(141, 221, 118);
+}
+
+#imageOne {
+  grid-area: service-image-1;
+  width: 90%;
+  border-radius: 5px;
+}
+#imageTwo {
+  grid-area: service-image-2;
+  width: 90%;
+  border-radius: 5px;
+}
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "service-text ."
+    "service-text service-image-1"
+    "service-text service-image-2";
+  gap: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease-in-out;
+}
+
+.service-content.active {
+  max-height: 10000px;
+}
+
+.text-content-service {
+  display: flex;
+  font-size: 18px;
+  padding: 0vh 5vw;
+  position: relative;
+  flex-direction: column;
+}
+/* .text-content-service::after {
+  content: "";
+  display: block;
+  width: 3px;
+  background-color: black;
+  border-left: 2px solid;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+}
+.text-content::after {
+  content: "";
+  display: block;
+  width: 3px;
+  background-color: white;
+  border-left: 2px solid;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+} */
+
+.text-content {
+  display: flex;
+  font-size: 18px;
+  padding: 0 5vw;
+  position: relative;
+  align-items: center;
+}
+
+li::marker {
+  color: #202048;
+  font-size: 150%;
+}
+
+.text-content li {
+  display: list-item;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
     "image-one image-two"
-    "image-three image-four"
-    ;
+    "image-three image-four";
+  gap: 10px;
 }
-#image-one{
-    grid-area: image-one;
+#image-one {
+  grid-area: image-one;
 }
-#image-two{
-    grid-area: image-two;
+#image-two {
+  grid-area: image-two;
 }
-#image-three{
-    grid-area: image-three;
+#image-three {
+  grid-area: image-three;
 }
-#image-four{
-    grid-area: image-four;
+#image-four {
+  grid-area: image-four;
 }
 
-.grid-image{
-    min-width: 100%;
-    min-height: 100%;
+.grid-image {
+  min-height: 100%;
 }
 
 .text-content p {
-    flex: 1; 
-    margin-right: 10px; 
-    order: 0; 
-  }
-
-.container{
-    margin-top: 5vh;
+  flex: 1;
+  margin-right: 10px;
+  order: 0;
 }
 
+.container {
+  margin-top: 5vh;
+  padding-bottom: 5vh;
+}
 
-#services{
-    background-color:#202048 ;
-    color: white;
+#services {
+  background-color: #202048;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    ". logo ."
+    ". contact social"
+    ". legal .";
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.footer-logo {
+  grid-area: logo;
+}
+
+.footer-contact {
+  grid-area: contact;
+}
+
+.legal {
+  grid-area: legal;
+}
+
+.social-links {
+  grid-area: social;
 }
