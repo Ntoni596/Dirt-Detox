@@ -1,7 +1,12 @@
-import React, { useState } from "react";
-import placeholder from "../assets/placeholder.jpg";
+import { useState } from "react";
 import gymOne from "../assets/gym-one.jpg";
 import gymTwo from "../assets/gym-two.jpg";
+import houseOne from "../assets/house-one.jpg"
+import houseTwo from "../assets/house-two.jpg"
+import retailOne from "../assets/retail-one.jpg"
+import retailTwo from "../assets/retail-two.jpg"
+import officeOne from "../assets/office-one.jpg"
+import officeTwo from "../assets/office-two.jpg"
 
 function Services() {
   const [officeVisible, setOfficeVisible] = useState(false);
@@ -112,9 +117,12 @@ function Services() {
               <strong>Staffroom and Kitchen Hygiene:</strong> We go the extra
               mile by cleaning staffrooms and kitchens, including ovens and
               fridges, ensuring a hygienic environment for your team.
+              <br></br>
+              <br></br>
+              Enquire today and ask us about our one week free trial. - Terms and Conditions Apply
             </p>
-            <img src={placeholder} alt="Placeholder"></img>
-            <img src={placeholder} alt="Placeholder"></img>
+            <img id="imageOne" src={officeOne} alt="Image of clean office space"></img>
+            <img id="imageTwo" src={officeTwo} alt="Image of office desk being cleaned"></img>
           </div>
         </div>
         <div className="service">
@@ -185,9 +193,12 @@ function Services() {
               environment, and ultimately enhances the overall success of your
               business. Trust Dirt Detox to bring out the best in your business
               through our unparalleled cleaning service.
+              <br></br>
+              <br></br>
+              Enquire today and ask us about our one week free trial. - Terms and Conditions Apply
             </p>
-            <img src={placeholder} alt="Placeholder"></img>
-            <img src={placeholder} alt="Placeholder"></img>
+            <img id="imageOne" src={retailOne} alt="Image of supermarket fridges"></img>
+            <img id="imageTwo" src={retailTwo} alt="Image of had holding cleaning supplies"></img>
           </div>
         </div>
         <div className="service">
@@ -261,6 +272,9 @@ function Services() {
               exceeds the expectations of your members. Trust Dirt Detox to
               elevate your gym to a higher standard of cleanliness and
               excellence.
+              <br></br>
+              <br></br>
+              Enquire today and ask us about our one week free trial. - Terms and Conditions Apply
             </p>
             <img id="imageOne" src={gymOne} alt="Gym cleaning equipment"></img>
             <img
@@ -343,8 +357,8 @@ function Services() {
               your unique needs, ensuring that you receive the exact level of
               cleaning your home deserves.
             </p>
-            <img id="imageOne" src={placeholder} alt="Placeholder"></img>
-            <img id="imageTwo" src={placeholder} alt="Placeholder"></img>
+            <img id="imageOne" src={houseOne} alt="Cleaning Supplies on table"></img>
+            <img id="imageTwo" src={houseTwo} alt="Image of clean kitchen and dining area"></img>
           </div>
         </div>
       </div>

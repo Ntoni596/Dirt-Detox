@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import navLogo from '../assets/Dirt-Detox-Logo.svg';
-import heroImage from '../assets/Hero-Section.png';
+import heroImage from '../assets/hero-section.jpg';
+import {FaBars, FaTimes } from 'react-icons/fa'
 
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +54,10 @@ function Navigation() {
     };
   }, []);
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div>
       <div id="hero" className="hero">
@@ -67,10 +73,14 @@ function Navigation() {
         <div className="nav-logo">
           <img src={navLogo} alt="Dirt Detox Logo" />
         </div>
-        <div className="nav-links">
+        <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a className="contact-button" href="#contact">Contact</a>
+        </div>
+        <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+          {/* Use the hamburger or close icon based on menu state */}
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </nav>
     </div>

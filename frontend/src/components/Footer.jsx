@@ -1,10 +1,9 @@
-import React from "react";
 import logo from "../assets/Dirt-Detox-Logo.svg";
 import { SlSocialFacebook, SlSocialInstagram } from "react-icons/sl";
 
 const Footer = () => {
   const contactNumber = "(04) 123 4567";
-  const contactEmail = "enquires@dirtdetox.co.nz";
+  const contactEmail = "info@dirtdetox.co.nz";
   const facebookLink = "This is a facebook link";
   const instagramLink = "this is a insta link";
 
